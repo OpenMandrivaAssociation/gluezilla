@@ -3,7 +3,7 @@
 %define libname %mklibname %name %major
 Name:           %name
 Version:        1.2.6.1
-Release:        %mkrel 1
+Release:        %mkrel 2
 License:        GPL
 URL:            http://www.go-mono.com
 Source0:        http://go-mono.com/sources/gluezilla/%{name}-%{version}.tar.bz2
@@ -56,5 +56,3 @@ rm -rf "$RPM_BUILD_ROOT"
 %defattr(-, root, root)
 %_libdir/libgluezilla.so.%{major}*
 %doc AUTHORS README TODO
-
-
