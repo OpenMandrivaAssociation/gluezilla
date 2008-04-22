@@ -2,7 +2,7 @@
 %define major 0
 %define libname %mklibname %name %major
 Name:           %name
-Version:        1.9
+Version:        1.9.1
 Release:        %mkrel 1
 License:        GPL
 URL:            http://www.go-mono.com
