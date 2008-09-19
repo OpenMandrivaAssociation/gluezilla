@@ -1,16 +1,17 @@
 %define name gluezilla
 %define major 0
 %define libname %mklibname %name %major
+%define snapshot 20080910
 Name:           %name
-Version:        1.9.1
-Release:        %mkrel 2
+Version:        2.0
+Release:        %mkrel 0.%snapshot.1
 License:        GPL
 URL:            http://www.go-mono.com
 Source0:        http://go-mono.com/sources/gluezilla/%{name}-%{version}.tar.bz2
 Summary:        Glue library for Winforms Web Control
 Group:          System/Libraries
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires:  mozilla-firefox-devel >= 2.0.0.11-3mdv
+BuildRequires:  libxulrunner-devel
 BuildRequires:  mono-devel
 BuildRequires:  gtk2-devel
 
@@ -22,9 +23,7 @@ Firefox to be used by mono.
 Group:System/Libraries
 Summary: Glue library for Winforms Web Control
 Provides: gluezilla = %version-%release
-#gw this is opened dynamically, LD_LIBRARY_PATH should be set to the
-# firefox dir
-Requires: libmozilla-firefox
+Requires: libxulrunner
 
 
 %description -n %libname
