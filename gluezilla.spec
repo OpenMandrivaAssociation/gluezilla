@@ -11,7 +11,7 @@ Source0:        http://go-mono.com/sources/gluezilla/%{name}-%{version}.tar.bz2
 Summary:        Glue library for Winforms Web Control
 Group:          System/Libraries
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires:  libxulrunner-devel
+BuildRequires:  xulrunner-devel
 BuildRequires:  mono-devel
 BuildRequires:  gtk2-devel
 
