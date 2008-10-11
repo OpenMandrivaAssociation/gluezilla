@@ -1,10 +1,9 @@
 %define name gluezilla
 %define major 0
 %define libname %mklibname %name %major
-%define snapshot 20080910
 Name:           %name
 Version:        2.0
-Release:        %mkrel 0.%snapshot.1
+Release:        %mkrel 1
 License:        GPL
 URL:            http://www.go-mono.com
 Source0:        http://go-mono.com/sources/gluezilla/%{name}-%{version}.tar.bz2
