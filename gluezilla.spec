@@ -11,7 +11,7 @@ Patch:		gluezilla-2.4-fix-linking.patch
 Summary:        Glue library for Winforms Web Control
 Group:          System/Libraries
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires:  xulrunner-devel-unstable
+BuildRequires:  xulrunner-devel
 %ifnarch %arm %mips
 BuildRequires:  mono-devel
 %endif
