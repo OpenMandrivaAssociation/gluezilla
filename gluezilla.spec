@@ -3,7 +3,7 @@
 %define libname %mklibname %name %major
 Name:           %name
 Version:        2.4.2
-Release:        %mkrel 1
+Release:        %mkrel 2
 License:        GPL
 URL:            http://www.go-mono.com
 Source0:        http://go-mono.com/sources/gluezilla/%{name}-%{version}.tar.bz2
@@ -12,7 +12,9 @@ Summary:        Glue library for Winforms Web Control
 Group:          System/Libraries
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:  xulrunner-devel-unstable
+%ifnarch %arm %mips
 BuildRequires:  mono-devel
+%endif
 BuildRequires:  gtk2-devel
 
 %description
