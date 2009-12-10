@@ -2,8 +2,8 @@
 %define major 0
 %define libname %mklibname %name %major
 Name:           %name
-Version:        2.4.2
-Release:        %mkrel 2
+Version:        2.4.3
+Release:        %mkrel 1
 License:        GPL
 URL:            http://www.go-mono.com
 Source0:        http://go-mono.com/sources/gluezilla/%{name}-%{version}.tar.bz2
