@@ -3,11 +3,13 @@
 %define libname %mklibname %name %major
 Name:           %name
 Version:        2.6
-Release:        %mkrel 1
-License:        GPL
+Release:        %mkrel 2
+License:        LGPLv2
 URL:            http://www.go-mono.com
 Source0:        http://go-mono.com/sources/gluezilla/%{name}-%{version}.tar.bz2
 Patch:		gluezilla-2.4-fix-linking.patch
+#gw link with xulrunner > 1.9
+Patch1: 	gluezilla-2.6-new-xulrunner.patch
 Summary:        Glue library for Winforms Web Control
 Group:          System/Libraries
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -35,6 +37,9 @@ Firefox to be used by mono.
 %prep
 %setup -q
 %patch -p1
+%if %mdvver > 201000
+%patch1 -p1
+%endif
 autoconf
 
 %build
