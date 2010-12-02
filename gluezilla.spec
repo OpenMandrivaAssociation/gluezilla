@@ -3,7 +3,7 @@
 %define libname %mklibname %name %major
 Name:           %name
 Version:        2.6
-Release:        %mkrel 2
+Release:        %mkrel 3
 License:        LGPLv2
 URL:            http://www.go-mono.com
 Source0:        http://go-mono.com/sources/gluezilla/%{name}-%{version}.tar.bz2
