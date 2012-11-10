@@ -1,0 +1,12 @@
+diff -p -up gluezilla-2.4/configure.ac~ gluezilla-2.4/configure.ac
+--- gluezilla-2.4/configure.ac~	2009-01-29 19:26:41.000000000 +0100
++++ gluezilla-2.4/configure.ac	2009-02-18 14:33:49.000000000 +0100
+@@ -175,7 +175,7 @@ if test "x${optimize}" == xno ; then
+ 	GLUEZILLA_CFLAGS="-DDEBUG -DFORCE_PR_LOG ${GLUEZILLA_CFLAGS}"
+ fi
+ GLUEZILLA_CFLAGS="-DXPCOM_GLUE -DXPCOM_GLUE_NEEDS_NSPR -fno-rtti -fshort-wchar ${GLUEZILLA_CFLAGS}"
+-GLUEZILLA_LIBS="${GLUEZILLA_LIBS} -lxpcomglue"
++GLUEZILLA_LIBS="${GLUEZILLA_LIBS} -lxpcomglue -ldl"
+ 
+ 
+ AC_SUBST(GLUEZILLA_CFLAGS)
