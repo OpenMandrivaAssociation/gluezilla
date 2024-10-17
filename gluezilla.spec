@@ -5,7 +5,7 @@ Name:           %name
 Version:        2.6
 Release:        %mkrel 3
 License:        LGPLv2
-URL:            http://www.go-mono.com
+URL:            https://www.go-mono.com
 Source0:        http://go-mono.com/sources/gluezilla/%{name}-%{version}.tar.bz2
 Patch:		gluezilla-2.4-fix-linking.patch
 #gw link with xulrunner > 1.9
